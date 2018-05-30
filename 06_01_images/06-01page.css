@@ -1,0 +1,10 @@
+img {
+    max-width: 100%;
+}
+.my-box{
+
+
+        width: 500px;
+        height: 500px;
+        background-image: url(http://media.socastsrm.com/wordpress/wp-content/blogs.dir/934/files/2018/01/bookheart.jpg)
+}

@@ -39,6 +39,9 @@
 /*3. change the text color to black*/
 .my-link{
 	
+font-weight: 900;
+text-decoration: none;
+color: black;
 
 	
 }
@@ -46,10 +49,17 @@
 /*5. add a left padding of: 1rem*/
 .my-link:hover, .my-link:active{
 	
+color: white;
+background-color: black;
+padding-left: 1rem;
 
-	
+
 }
+	
+
 /*you can optionally style a visited state*/
 .my-link:visited{
+
+color: blue;
 
 }
