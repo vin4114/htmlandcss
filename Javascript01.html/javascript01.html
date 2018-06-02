@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My first Javascript</title>
+
+    <script language="javascript" type="text/javascript">
+        // all our javascript code here
+
+        var number = 1;
+        var name = "Darryl"; //global variable
+        var linebreak = "<br />"; // br is linebreak, will break the line into row or next line
+        var names = ["Angela", "Chetan", "Janine", "Tong Hwee", "Christopher"]; // use[] when using list of name pg 120 notes: start from 0, 1 ,2 ,3 ,4 (5 names)
+
+        function writeHTML() {
+            document.writeln("<h1>Hello World!!!</h1>");
+            document.writeln(number);
+            document.write("<br>");
+            document.writeln(name);
+        }
+
+        function sayName() {
+            var name = "Eddie"; // local variable. this name is use within this function only.
+
+            alert(this.name); // keywork "this" is to use global variable. this is to define which "name" to use.
+        }
+
+        function basicCalculation() {
+            var num1 = 5;
+            var num2 = 2;
+
+            document.writeln("5*2=" + (num1 * num2) + linebreak); // linebreak will break the line into row or next line
+            document.writeln("5/2=" + (num1 / num2) + linebreak);
+            document.writeln("5+2=" + (num1 + num2) + linebreak);
+            document.writeln("5-2=" + (num1 - num2) + linebreak);
+            document.writeln("5%2=" + (num1 % num2) + linebreak);
+        }
+
+        function processNumber() {
+            var number = document.getElementById("num").value;
+            var RHS = 50;
+            // alert(number);
+            if ((number > 90) && (number <= 100)) {
+                alert("Distinction");
+            }
+            else if ((number > 80) && (number < 90)) {
+                alert("A");
+            }
+            else if (number > RHS) {
+                alert("pass");
+            }
+            else {
+                alert("broderline pass"); // can define further, like > 101 is "out of range".
+            }
+        }
+
+        function processNames() {
+            document.writeln("Number of items in names:" + names.length + linebreak);
+            }
+
+            var count = 0;
+            while (count < names.length) { // start of while loop
+
+            //document.writeln(names[count] + linebreak);
+            console.log(names[count]);
+
+
+            count++; // count = count + 1
+            }//end of while loop
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Print text" onclick="writeHTML()" />
+    <input type="button" value="Say Name" onclick="sayName()" />
+    <input type="button" value="basic Calculation" onclick="basicCalculation()" />
+    <input type="button" value="Loop through Names" onclick="processNames()" />
+    <hr> Enter a number :
+    <input type="number" id="num" />
+    <input type="button" value="Post number" onclick="processNumber()" />
+
+
+</body>
+
+</html>
