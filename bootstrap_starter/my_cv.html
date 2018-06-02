@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Walkthrough</title>
 
     <!-- default bootstrap -->
@@ -19,15 +20,271 @@
     <!-- animate.css -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
     
+    <Link rel="stylesheet" type=".jumbotron"></Link>
     <!-- use this style for testing and development purposes -->
-    <!-- <style type="text/css">
+    <style type="text/css">
     .container{border: 2px dotted green;}
     .row{border: 1px dotted red;}
     .row [class*=' col-']{border: 2px dotted purple;}
-    </style> -->
+    </style>
     
 </head>
 <body>
+
+    <div class="container">
+        <!--row 1-->
+
+        <div class= "row">
+            <div class="col-md-12">
+                    <div class="jumbotron">
+                            <h1>Eat, Code, Sleep, Repeat</h1>
+                            <p>
+                                Tony Stark
+                            </p>
+                            <p><a class="btn btn-primary" href="http://google.com" role="button">Learn more</a></p>
+                          </div>
+
+
+            </div>
+
+        </div>
+        <!--row 2-->
+
+        <div class= "row">
+                <div class="col-md-4">
+                    
+                    <div class="thumbnail">
+
+                        <img src="http://via.placeholder.com/450x450" alt="thumbnail">
+
+                        <div class="caption">
+                            <h3>Profilio 1</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto dolorum reiciendis ab ratione consequuntur corporis est non, sit ipsa molestias atque, iure nihil quidem cum unde minima, quas necessitatibus quo!></p>
+
+                            <a class="btn btn-primary" href="http://google.com" role="button">Learn more</a>
+                        </div>
+                        </div>
+
+                </div>
+                <div class="col-md-4">
+                        
+                        <div class="thumbnail">
+
+                                <img src="http://via.placeholder.com/450x450" alt="thumbnail">
+        
+                                <div class="caption">
+                                    <h3>Profilio 1</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto dolorum reiciendis ab ratione consequuntur corporis est non, sit ipsa molestias atque, iure nihil quidem cum unde minima, quas necessitatibus quo!></p>
+        
+                                    <a class="btn btn-primary" href="http://google.com"role="button">Learn more </a>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+                    <div class="col-md-4">
+                            <div class="thumbnail">
+
+                                    <img src="http://via.placeholder.com/450x450" alt="thumbnail">
+            
+                                    <div class="caption">
+                                        <h3>Profilio 1</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto dolorum reiciendis ab ratione consequuntur corporis est non, sit ipsa molestias atque, iure nihil quidem cum unde minima, quas necessitatibus quo!></p>
+            
+                                        <a class="btn btn-primary" href="http://google.com"role="button">Learn more </a>
+                                    </div>  
+                                </div>
+
+                        </div>
+        </div>
+        <!--row 3-->
+
+        <div class= "row">
+                <div class="col-md-12">
+                    
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" 
+                            src="https://www.youtube.com/embed/aJOTlE1K90k"></iframe>
+                </div>
+
+        </div>
+
+        <!--row 4-->
+
+        <div class= "row">
+            
+                <div class="col-md-6">
+
+                    <h3>
+                        Talk To Me
+                    </h3>
+
+                    <form action="">
+                        <div class="form-group">
+                                <label for="my_name">Name</label>
+                                <input type="text" class="form-group" name="my_name"id="my_name">
+
+                                <div class="form-group">
+                                        <label for="">Email</label>
+                                        <input type="email" class="form-group" Email="my_email" id="my_email">
+
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="my-radio" id="my_radio_1">
+                                    TEST 1
+                                    </label>
+                                   
+                                    <div class="radio">
+                                    <label><input type="radio" name="my-radio" id="my_radio_2">
+                                    TEST 2
+                                    </label>
+                                    
+
+
+                        </div>        
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" value="Drop me an Email">           
+                        
+                        
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <h3>
+                        About Me
+                    </h3>
+
+                    <hr>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa quibusdam atque laudantium porro minima voluptatem hic neque dicta vitae! Quibusdam, nam dolores. Repellendus vero delectus ex itaque labore ab autem.
+                    </p>
+
+                </div>
+
+            </div> 
+            <!--row 5-->
+
+        <div class= "row">
+                <div class="col-md-4">
+
+                    <h3>Working Hours</h3>
+
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Day
+                            </th>
+
+                        </tr>
+                        <th>
+                            <th>
+                                Hours
+                            </th>
+
+                        </th>
+                        <tr>
+                            <tr>
+                                Monday  
+                            </tr>
+
+                        </tr>
+                        <tr>
+                            9-6pm
+                        </tr>
+                        <tr>
+                            <td>Tuesday
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Wednesday
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            9-6pm
+                        </tr>
+
+
+
+                    </table>
+                </div>
+                <div class="col-md-4">
+
+                        <div class="embed-responsive-4by3">
+                           <iframe src="" frameborder="0"></iframe>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-md-4">
+
+                            <h3>Find Me</h3>
+                            <div></div>
+                            <div class="list-group">
+                                <a href="http://" class="list-group-item">
+                                    <i class="fa fa-phone"> </i>+65 12345678
+                                
+                                </a>
+                            </div>
+                        </div>
+
+            </div>
+            <!--row 6-->
+
+            <div class= "row">
+                <div class="col-md-12 text-center">
+                        
+                    <ul class="list-inline">
+                        <li>
+
+                            <a href="http://">
+                                <i class="fa fa-facebook"></i>                          
+                            </a>
+                        </li>
+                        <li>
+    
+                                <a href="http://">
+                                    <i class="fa fa-instagram"></i>                       
+                                </a>
+                            </li>
+                            <li>
+    
+                                    <a href="http://">
+                                        <i class="fa fa-whatsapp"></i>                    
+                                    </a>
+                                </li>
+
+                    </ul>
+
+                </div>
+                
+
+    
+            </div>
+
+
+
+    </div>
+
+
+
+
+
+    </div>
+
+
 
 </body>
 </html>
