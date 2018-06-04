@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>My Javascript 02</title>
+        <script language="javascript" type="text/javascript">
+                    
+            var myObject = [
+                {
+                    "id":1,
+                    "name": "steven",
+                    "dob": "01-Jan-1977",
+                    "cars": ["Civic", "Ëvolution","Subaru"]   
+                }, 
+                {
+                    "id":2,
+                    "name": "Eddie",
+                    "dob": "18-Dec-1977",
+                    "cars": ["QQ", "Chevrolet","Mini"] 
+                }, 
+                {
+                    "id":3,
+                    "name": "Grace",
+                    "dob": "01-Jul-1977",
+                    "cars": ["BMW", "Mercedes","Lexus"] 
+                }];
+
+            var linebreak = "<br>";
+
+            function printData(count) {
+                var name = myObject[count].name;
+                var dob = myObject[count].dob;
+                var car ="";
+                var carlen = myObject[count].cars.length;
+
+                for(var i = 0; i <carlen; i++) {
+                    car += myObject[count].cars[i] + linebreak; // car = car + myObject[count].cars[i];
+
+                }
+
+                var x = document.getElementById("demo").innerHTML;
+                document.getElementById("demo").innerHTML = x + name + linebreak + dob + linebreak + car + linebreak;
+            }
+            
+            
+            function whileloopData() {
+                var counter = 0;
+
+                while (counter < myObject.length) { // start of while loop
+                    printData(counter);
+
+                    counter++; //counter = counter + 1;
+                } // end of while loop
+            }
+                
+        </script>
+        
+        
+    </head>
+    <body>
+
+            <input type="button" value="Print Data" onclick="whileloopData()" />
+
+        <p id="demo">
+
+        </p>   
+    </body>
+</html>
